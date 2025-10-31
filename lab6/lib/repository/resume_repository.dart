@@ -4,17 +4,17 @@ class ResumeRepository {
   final List<Resume> _resumes = [
     Resume(
       id: 1,
-      fullName: "Volodymyr Horielov",
+      fullName: "Anna Krasnobaieva",
       hobbies: "Gaming",
       currentSituation: "Student at university",
-      aboutMe: "Hello! My name is Volodymyr. I'm from Kherson.",
-      gitHubUsername: 'VolodymyrVH',
+      aboutMe: "Hello! My name is Anna. I'm from Kharkiv.",
+      gitHubUsername: 'soolyshine',
     ),
     Resume(
       id: 2,
       fullName: "Test1",
-      hobbies: "Football, games",
-      currentSituation: "School student",
+      hobbies: "Games",
+      currentSituation: "University student",
       aboutMe: "Just testing profile",
       gitHubUsername: 'test-account',
     ),
@@ -26,7 +26,7 @@ class ResumeRepository {
 
   Resume? getById(int id) {
     try {
-      return _resumes.firstWhere((resume) => resume.id == id);
+      return _resumes.firstWhere((resume) => resume.id == id);  
     } catch (e) {
       return null;
     }
